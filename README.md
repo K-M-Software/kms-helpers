@@ -1,6 +1,8 @@
-# 🛠️ ts-utils (or your preferred package name)
+# 🛠️ ts-utils (KMSoft - helpers)
 
 A collection of lightweight, typed, and well-documented utility functions for everyday TypeScript/JavaScript development.
+
+Library is under development, stay tuned for updates! Example code in the README is updated for the current version content.
 
 ## 📦 Installation
 
