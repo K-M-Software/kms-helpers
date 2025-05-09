@@ -5,7 +5,7 @@ A collection of lightweight, typed, and well-documented utility functions for ev
 ## 📦 Installation
 
 ```bash
-npm install your-package-name
+npm install kmsoft-helpers
 ```
 
 ## 🔧 Usage
@@ -23,8 +23,8 @@ import {
   muteColor,
   noop,
   regexCheck,
-  sort
-} from "your-package-name";
+  sort,
+} from "kmsoft-helpers";
 ```
 
 ---
@@ -63,9 +63,9 @@ generatePassword(8, 12);
 ### `isArrayNullOrEmpty`
 
 ```ts
-isArrayNullOrEmpty([]);        // => true
-isArrayNullOrEmpty(null);      // => true
-isArrayNullOrEmpty([1, 2]);    // => false
+isArrayNullOrEmpty([]); // => true
+isArrayNullOrEmpty(null); // => true
+isArrayNullOrEmpty([1, 2]); // => false
 ```
 
 ---
@@ -74,8 +74,8 @@ isArrayNullOrEmpty([1, 2]);    // => false
 
 ```ts
 isDefined(undefined); // => false
-isDefined(null);      // => false
-isDefined(0);         // => true
+isDefined(null); // => false
+isDefined(0); // => true
 ```
 
 ---
@@ -83,9 +83,9 @@ isDefined(0);         // => true
 ### `isNumberNullOrZero`
 
 ```ts
-isNumberNullOrZero(0);     // => true
-isNumberNullOrZero(null);  // => true
-isNumberNullOrZero(10);    // => false
+isNumberNullOrZero(0); // => true
+isNumberNullOrZero(null); // => true
+isNumberNullOrZero(10); // => false
 ```
 
 ---
@@ -93,8 +93,8 @@ isNumberNullOrZero(10);    // => false
 ### `isStringNullOrEmpty`
 
 ```ts
-isStringNullOrEmpty("");       // => true
-isStringNullOrEmpty("hello");  // => false
+isStringNullOrEmpty(""); // => true
+isStringNullOrEmpty("hello"); // => false
 ```
 
 ---
@@ -103,8 +103,8 @@ isStringNullOrEmpty("hello");  // => false
 
 ```ts
 isStringNullOrEmptyOrUndefined(undefined); // => true
-isStringNullOrEmptyOrUndefined("");        // => true
-isStringNullOrEmptyOrUndefined("text");    // => false
+isStringNullOrEmptyOrUndefined(""); // => true
+isStringNullOrEmptyOrUndefined("text"); // => false
 ```
 
 ---
@@ -130,7 +130,7 @@ noop(); // => undefined
 
 ```ts
 regexCheck("Hello123", /^[A-Za-z0-9]+$/); // => true
-regexCheck("Hello!", /^[A-Za-z0-9]+$/);   // => false
+regexCheck("Hello!", /^[A-Za-z0-9]+$/); // => false
 ```
 
 ---
@@ -138,7 +138,7 @@ regexCheck("Hello!", /^[A-Za-z0-9]+$/);   // => false
 ### `sort`
 
 ```ts
-sort([3, 1, 4, 2], "asc");  // => [1, 2, 3, 4]
+sort([3, 1, 4, 2], "asc"); // => [1, 2, 3, 4]
 sort(["b", "a", "c"], "desc"); // => ["c", "b", "a"]
 sort([new Date(2020, 5), new Date(2019, 1)]); // => sorted by date
 ```
@@ -150,4 +150,3 @@ sort([new Date(2020, 5), new Date(2019, 1)]); // => sorted by date
 [ISC](LICENSE)
 
 ---
-
